@@ -100,7 +100,7 @@ function Contact() {
                             id="message" maxLength='200' rows='5' 
                             onChange={handleMessage}
                             />
-                        { !isMessageValid ? <span style={{color : 'red'}}>the character '\' not allowed</span> : ''}
+                        { !isMessageValid ? <span style={{color : 'red'}}>the character &apos;\&apos; not allowed</span> : ''}
 
                     </div>
 

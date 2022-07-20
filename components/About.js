@@ -24,7 +24,7 @@ function About() {
           </div>
 
           <div className={styles.image_container}>
-              <Image src={img} className={styles.image} />
+              <Image src={img} alt="Personal Image" className={styles.image} />
           </div>
         </div>
         
