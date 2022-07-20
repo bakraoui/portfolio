@@ -1,0 +1,76 @@
+.skills {
+    height: 100vh;
+    position: relative;
+    padding-top: 50px;
+}
+
+.skills h1{
+    margin-bottom: 30px;
+    position: relative;
+    width: max-content;
+    cursor: default;
+}
+
+.skills h1 span{
+    color: #fff;
+    background-color: rgba(51, 51, 51, 0.733);
+    padding: 0px 2px;
+}
+.skills h1 .underline{
+    position: absolute;
+    bottom: 0;
+    left: 37%;
+    height: 5px;
+    width: 0%;
+    padding: 0;
+    background-color: rgba(51, 51, 51, 0.733);
+    transition: 0.5s;
+}
+.skills h1:hover .underline{
+    width: 70%;
+}
+.skills_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-basis: 45%;
+    margin: 10px 0px;
+    padding: 10px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+.card:hover {
+    box-shadow: 0px 0px 4px 0px #333;
+    transform: scale(1.1);
+}
+.card h4{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.card p{
+    margin-bottom: 10px;
+    color: #999;
+    font-size: 14px;
+}
+
+
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) {  }
+
+ /*  Medium devices (tablets, 768px and up) */
+ @media (min-width: 768px) {  }
+ 
+  /* Large devices (desktops, 992px and up) */
+ @media (min-width: 992px) {  }
+ 
+  /* X-Large devices (large desktops, 1200px and up) */
+ @media (min-width: 1200px) {  }
+ 
+  /* XX-Large devices (larger desktops, 1400px and up) */
+ @media (min-width: 1400px) {  }

@@ -1,0 +1,121 @@
+
+.nav {
+    background-color: #333;
+    position: relative;
+    min-width: 100%;
+    z-index: 2;
+/* 
+    position: fixed;
+    top: 0;
+    left: 0; */
+}
+.navbar_toggler {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.nav ul {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    position: fixed;
+    top: -100%;
+    left: -100%;
+    transition: 1s;
+    z-index: 1;
+    box-shadow: 1px 1px 5px -1px #a09fa2;
+    border-radius: 0px 0px 5px 0px;
+}
+
+.nav ul li {
+    padding: 4px;
+    transition: 0.8s;
+}
+
+.nav ul li:hover {
+    background-color: #fff;
+    color: black;
+}
+.nav ul li:hover a{
+    color: black;
+}
+
+.nav ul li a {
+    display: flex ;
+    flex-direction: row;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+.nav ul li a span:first-child {
+    margin-right: 10px;
+}
+
+.toggle {
+    top: 0 !important;
+    left: 0 !important;
+}
+@media screen and (min-width : 768px ) {
+    .nav {
+        display: flex;
+        justify-content: center;
+    }
+    .navbar_toggler {
+        display: none;
+    }
+    .nav ul {
+        flex-direction: unset;
+        position: unset;
+        z-index: unset;
+        box-shadow: unset;
+        border-radius: unset;
+        width: unset;
+    }
+    
+    .nav ul li {
+        transition: 0.6s;
+        border-radius: 4px;
+        margin: 2px 4px;
+    }
+    
+    .nav ul li:hover {
+        background-color: #fff;
+        color: black;
+    }
+    .nav ul li:hover a{
+        color: black;
+    }
+    .nav ul li a {
+        display: flex ;
+        flex-direction: column;
+        text-align: center;
+        color: #fff;
+        padding: 3px 10px;
+    }
+    .nav ul li a span:first-child {
+        margin-bottom: 5px;
+        margin-right: 0px;
+    }
+    
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }

@@ -1,0 +1,94 @@
+.study_experiences {
+    background-color: #333;
+    width: 100%;
+    padding-top: 30px;
+    color: #fff;
+}
+
+.card_container {
+    padding: 20px;
+}
+
+.card_container h1{
+    margin-bottom: 30px;
+    line-height: 15px;
+    position: relative;
+    width: max-content;
+    cursor: default;
+}
+
+.card_container h1 span{
+    color: rgba(51, 51, 51, 0.733);
+    background-color: #fff;
+    padding: 0px 2px;
+}
+.card_container h1 .underline{
+    position: absolute;
+    bottom: -7px;
+    left: 27%;
+    height: 5px;
+    width: 0%;
+    padding: 0;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.card_container h1:hover .underline{
+    width: 70%;
+}
+.card_container .card {
+    margin: 15px 0px;
+}
+
+.card_container .card p{
+   line-height: 22px;
+   font-size: 12px;
+}
+
+.card_container ul {
+    list-style: circle;
+    margin-left: 20px; 
+    line-height: 22px;
+   font-size: 12px;   
+}
+@media screen and (min-width : 768px ) {
+    .study_experiences {
+        height: max-content;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .card_container {
+        width: 48%;
+        padding: 10px;
+    }
+
+
+    .card_container .card p{
+       line-height: 26px;
+       font-size: 13px;
+    }
+
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) {  }
+
+ /*  Medium devices (tablets, 768px and up) */
+ @media (min-width: 768px) {  }
+ 
+  /* Large devices (desktops, 992px and up) */
+ @media (min-width: 992px) {  
+    .study_experiences {
+        height: 100vh;
+    }
+ }
+ 
+  /* X-Large devices (large desktops, 1200px and up) */
+ @media (min-width: 1200px) {  }
+ 
+  /* XX-Large devices (larger desktops, 1400px and up) */
+ @media (min-width: 1400px) { 
+    .study_experiences {
+        height: max-content;
+    }
+  }
