@@ -1,16 +1,25 @@
 import styles from '../styles/contact.module.css'
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { isValidName,isValidEmail, isValidMessage } from '../function/ContactValidation';
 import Link from 'next/link';
+// import emailjs from '@emailjs/browser';\
+import emailjs from "emailjs-com";
+
 function Contact() {
-    const [name, setName] = useState(null);
+    const [name, setName] = useState('');
     const [isNameValid, setIsNameValid] = useState(true);
 
-    const [email, setEmail] = useState(null);
+    const [email, setEmail] = useState('');
     const [isEmailValid, setIsEmailValid] = useState(true);
 
-    const [message, setMessage] = useState(null);
+    const [message, setMessage] = useState('');
     const [isMessageValid, setisMessageValid] = useState(true);
+
+    const [btnSubmited, setBtnSubmited] = useState(false);
+    const [isSucceed, setisSucceed] = useState(false);
+    const [isFailed, setisFailed] = useState(false);
+
+    const form = useRef()
 
     const handleName = (e) => {
         const name = e.target.value;
@@ -42,25 +51,59 @@ function Contact() {
         }
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault(); 
-        if (isEmailValid && isMessageValid && isNameValid) {
-            // code to send request to server
+
+        if (
+            email.length == 0 || name.length === 0 || message.length === 0 || 
+            !isEmailValid || !isMessageValid || !isNameValid) {
+           
+            setisSucceed(false)
+            setBtnSubmited(true)
+
+            setisFailed(true) 
+
         }else{ 
-            // code for error
+
+            
+            emailjs.sendForm('service_buacz9p', 'portfolio-template', form.current, 'ss5rn_DBGkmEUV0n5')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
+            setisFailed(false)
+            setisSucceed(true)
+            setBtnSubmited(true)
         }
+
+        setTimeout(() => {
+            setBtnSubmited(false)
+        }, 5000);
     }
 
   return (
     <section className={styles.contact + ' container'} id='contact'>
         <h1> <span>Co</span>ntact Me<span className={styles.underline}></span></h1>
         <div className={styles.row}>
-
+            
+            <p className={` ${styles.message} 
+                    ${btnSubmited === true ? styles.btn_submit : ''}
+                    ${isFailed === true ? styles.failed : ''}
+                    ${isSucceed === true ? styles.succeed : ''}
+                    
+                    `}>
+                { isSucceed===true ? ' The email was sent with success' : ''}
+                { isFailed===true ? 'The email not sent, try again.' : ''}
+                
+            </p>
             <div className={styles.col}>
-                <form method="post" onSubmit={handleSubmit}>
+                <form ref={form} method="post" onSubmit={handleSubmit}>
                     <div className={styles.form_group}>
                         <label htmlFor="name" >Name</label>
                         <input  type="text" 
+                                name='name'
                                 className={
                                     `${styles.form_control} 
 
@@ -76,6 +119,7 @@ function Contact() {
                     <div className={styles.form_group} >
                         <label htmlFor="email" >Email</label>
                         <input type="email" 
+                                name='email'
                                className={
                                 `${styles.form_control} 
 
