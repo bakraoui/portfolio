@@ -36,6 +36,24 @@ function StudyExperiences() {
 
             <div className={styles.card}>
                 <h4>Software Developer</h4>
+                <p>NAVA BUSINESS</p>
+                <p>01 March - 31 Mai 2022</p>
+                <p>PFA project, it is about Parking Management</p>
+                <div>
+                    <p>Modules : the interventions and the legal module</p>
+                    
+
+                    <ul>
+                        <li>intervrntions : external or internal maintenance</li>
+                        <li>legal module : contracts, tax vignette, technical visit and assurance. </li>
+                    </ul>
+                </div>
+                <p> <b>technologies</b>  : Bootstrap, Reactjs, Spring boot, MySQL DB.</p>
+
+            </div>
+
+            <div className={styles.card}>
+                <h4>Software Developer</h4>
                 <p>SMART SOLUCE</p>
                 <p>15 July - 31 August 2021</p>
                 <p>I worked on a School Management System project.</p>
@@ -51,24 +69,6 @@ function StudyExperiences() {
                     </ul>
                 </div>
                 <p> <b>technologies</b>  : HTML, CSS, Bootstrap, PHP, MySQL and SQL.</p>
-            </div>
-
-            <div className={styles.card}>
-                <h4>Software Developer</h4>
-                <p>NAVA BUSINESS</p>
-                <p>01 March - 31 Mai 2022</p>
-                <p>PFA project, it is about Parking Management</p>
-                <div>
-                    <p>Modules : the interventions and the legal module</p>
-                    
-
-                    <ul>
-                        <li>intervrntions : external or internal maintenance</li>
-                        <li>legal module : contracts, tax vignette, technical visit and assurance. </li>
-                    </ul>
-                </div>
-                <p> <b>technologies</b>  : Bootstrap, Reactjs, Spring boot, MySQL DB.</p>
-
             </div>
         </div>
         

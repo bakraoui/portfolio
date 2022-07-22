@@ -1,6 +1,7 @@
 import styles from "../styles/about.module.css";
 import Image from "next/image";
 import img from '../public/img.jpg'
+
 function About() {
 
   return (

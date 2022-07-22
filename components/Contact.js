@@ -112,50 +112,45 @@ function Contact() {
                
 
                 <Link href='tel:0651584863' target='_blank'>
-                    <a className={styles.card}>
-                    <span><i className="fas fa-phone"></i></span>
+                    <a className={styles.card + ' ' + styles.tele}>
+                        <span><i className="fas fa-phone"></i></span>
+                        <span>+212 651 58 48 63</span>
                     </a>
                 </Link>
-                <Link href='mailto:ayyoub.bakraoui@gmail.com' target='_blank'>
+                <Link href='mailto:ayyoub.bakraoui@gmail.com' target='_blank' rel="noreferrer">
                     <a className={styles.card}>
                         <span><i className="fab fa-google"></i></span>
                     </a>
                 </Link>
-                <Link href='to:0651584863' target='_blank'>
-                    <a className={styles.card}>
+                <Link href='to:0651584863'  target='_blank' rel="noreferrer">
+                    <a className={styles.card }>
                         <span><i className="fab fa-facebook-f"></i></span>
                     </a>
                 </Link>
-                <Link href='https://linkedin.com/in/ayoub-bakraoui' target='_blank'>
-                    <a className={styles.card}><i className="fab fa-linkedin-in"></i></a>
-                </Link>
 
-                <Link href='https://github.com/bakraoui' target='_blank'>
-                    <a className={styles.card}>
-                        <span><i className="fab fa-github"></i></span>
-                    </a>
-                </Link>
+                <a href='https://linkedin.com/in/ayoub-bakraoui'  rel="noreferrer" target='_blank' className={styles.card}>
+                    <span><i className="fab fa-linkedin-in"></i></span>
+                </a>
 
-                <Link href='https://www.hackerrank.com/ayoubbakraoui' target='_blank'>
-                    <a className={styles.card}>
-                        <span><i className="fab fa-hackerrank"></i></span>
-                    </a>
-                </Link>
-                <Link href='https://web.facebook.com/Bakraoui.ayyoub' target='_blank'>
-                    <a className={styles.card}>
-                        <span><i className="fab fa-facebook-f"></i></span>
-                    </a>
-                </Link>
-                <Link href='https://twitter.com/bakraoui_ayoub' target='_blank'>
-                    <a className={styles.card}>
-                        <span><i className="fab fa-twitter"></i></span>
-                    </a>
-                </Link>
-                <Link href='https://www.instagram.com/ayoub_bakraoui/' target='_blank'>
-                    <a className={styles.card}>
-                        <span><i className="fab fa-instagram"></i></span>
-                    </a>
-                </Link>
+                <a href='https://github.com/bakraoui' target='_blank' rel="noreferrer" className={styles.card}>
+                    <span><i className="fab fa-github"></i></span>
+                </a>
+
+                <a href='https://www.hackerrank.com/ayoubbakraoui' target='_blank' rel="noreferrer" className={styles.card}>
+                    <span><i className="fab fa-hackerrank"></i></span>
+                </a>
+
+                <a href='https://web.facebook.com/Bakraoui.ayyoub' target='_blank' rel="noreferrer" className={styles.card}>
+                    <span><i className="fab fa-facebook-f"></i></span>
+                </a>
+
+                <a href='https://twitter.com/bakraoui_ayoub' target='_blank' rel="noreferrer" className={styles.card}>
+                    <span><i className="fab fa-twitter"></i></span>
+                </a>
+                
+                <a href='https://www.instagram.com/ayoub_bakraoui/' target='_blank' rel="noreferrer" className={styles.card}>
+                    <span><i className="fab fa-instagram"></i></span>
+                </a>
 
             </div>
             

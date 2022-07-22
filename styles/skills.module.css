@@ -1,7 +1,8 @@
 .skills {
-    height: 100vh;
+    height: max-content;
     position: relative;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .skills h1{
@@ -67,10 +68,18 @@
  @media (min-width: 768px) {  }
  
   /* Large devices (desktops, 992px and up) */
- @media (min-width: 992px) {  }
+ @media (min-width: 992px) {  
+    .skills {
+        height: 100vh;
+    }
+ }
  
   /* X-Large devices (large desktops, 1200px and up) */
  @media (min-width: 1200px) {  }
  
   /* XX-Large devices (larger desktops, 1400px and up) */
- @media (min-width: 1400px) {  }
+ @media (min-width: 1400px) { 
+    .skills {
+        height: max-content;
+    }
+  }

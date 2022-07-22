@@ -16,9 +16,12 @@ function Welcome() {
             </div>
             
             <div className={styles.btn + ' ' }>
-                <Link  href='/'>
-                  <a>Download CV</a>
-                </Link>
+                <a
+                  href="/CV.pdf"
+                  alt="alt text"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                > Download CV </a>
             </div>
 
            

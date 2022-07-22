@@ -1,7 +1,7 @@
 .contact {
     position: relative;
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 .contact h1 {
@@ -121,6 +121,18 @@
     transform: scale(1.01);
 }
 
+.tele {
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center !important;
+}
+
+.tele span:last-child{
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 10px;
+    display: none;
+}
 @media screen and (min-width : 768px ) {
     .contact {
         position: relative;
@@ -163,14 +175,11 @@
     .col {
         flex-basis: 45%;
     }
-
-    
     
     .form_group {
         display: flex;
         flex-direction: column;
         margin-bottom: 12px;
-        /* position: relative; */
     }
     
     .form_group label{
@@ -246,7 +255,11 @@
  @media (min-width: 768px) {  }
  
   /* Large devices (desktops, 992px and up) */
- @media (min-width: 992px) {  }
+ @media (min-width: 992px) { 
+    .tele span:last-child{
+        display: block;
+    }
+ }
  
   /* X-Large devices (large desktops, 1200px and up) */
  @media (min-width: 1200px) {  }

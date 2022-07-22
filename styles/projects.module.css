@@ -1,0 +1,135 @@
+.projects {
+    background-color: #333;
+    width: 100%;
+    /* height: 100vh; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+.projects h1 {
+    margin-bottom: 20px;
+    position: relative;
+    width: max-content;
+    cursor: default;
+}
+
+.projects h1  span{
+    color: rgba(51, 51, 51, 0.733);
+    background-color: #fff;
+    padding: 0px 2px;
+}
+.projects h1 .underline{
+    position: absolute;
+    bottom: 0px;
+    left: 27%;
+    height: 5px;
+    width: 0%;
+    padding: 0;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.projects h1:hover .underline{
+    width: 70%;
+}
+
+.card_container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card {
+    flex-basis: 80%;
+    border: 1px solid #999;
+    border-radius: 3px;
+    transition: .5s;
+    cursor: pointer;
+    position: relative;
+    margin-top: 25px;
+}
+.card:hover {
+    box-shadow: 0px 0px 1px 0px #999;
+    transform: scale(1.03);
+}
+
+.card .image{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    
+}
+.image  > span{
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.card .description{
+    padding: 10px;
+    font-size: 14px;
+}
+.title {
+    font-weight: 600;
+}
+.date {
+    font-size: 10px;
+    color: #999;
+}
+.location {
+    font-size: 11px;
+    color: #999;
+}
+.text {
+
+    line-height: 25px;
+}
+
+
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) {  }
+
+ /*  Medium devices (tablets, 768px and up) */
+ @media (min-width: 768px) { 
+    .card_container {
+        justify-content: space-between;
+    }
+    .card {
+        flex-basis: 45%;
+    }
+  }
+ 
+  /* Large devices (desktops, 992px and up) */
+ @media (min-width: 992px) { 
+    .card_container {
+        justify-content: space-between;
+    }
+    .card {
+        flex-basis: 31%;
+    }
+      
+  }
+ 
+  /* X-Large devices (large desktops, 1200px and up) */
+ @media (min-width: 1200px) { 
+    .card_container {
+        justify-content: space-between;
+    }
+    .card {
+        flex-basis: 30%;
+    }
+  }
+ 
+  /* XX-Large devices (larger desktops, 1400px and up) */
+ @media (min-width: 1400px) { 
+    .card_container {
+        justify-content: space-between;
+    }
+    .card {
+        flex-basis: 25%;
+    }
+  }
