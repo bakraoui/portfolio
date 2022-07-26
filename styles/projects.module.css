@@ -97,6 +97,7 @@
  @media (min-width: 768px) { 
     .card_container {
         justify-content: space-between;
+        align-items: center;
     }
     .card {
         flex-basis: 45%;

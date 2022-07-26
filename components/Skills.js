@@ -34,7 +34,7 @@ function Skills() {
             <div className={styles.card}>
                 <h4>Modeling</h4>
                 <p>
-                    Mercise, UML<br />
+                    Merise, UML<br />
                 </p>
             </div>
             

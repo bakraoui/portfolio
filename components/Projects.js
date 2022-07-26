@@ -54,7 +54,7 @@ function Projects (){
                         <div className={styles.title}>Ecommerce</div>
                         <div className={styles.location}>01-6 -- 15-6-2020 | ENSA AGADIR</div>
                         <div className={styles.text}>
-                            <p> project for Ecommerce.  </p>
+                            <p> project for buying and selling products.  </p><br />
                             <p> <b>Modules :</b>  products managament, payments, commands management...</p>
                             <p><b>Technologies :</b> HTML, CSS, Javascript, PHP, MySQL, SQL</p>
                         </div>
